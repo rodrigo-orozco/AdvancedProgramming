@@ -48,3 +48,38 @@ console.log(data);
 data.splice(1,0,3,4); // splice(index, deletedata, add...)
 console.log(data);
 
+///* Delete elements */
+
+data.pop();
+console.log(data);
+
+data.shift();
+console.log(data);
+
+data.splice(1,3,500);
+console.log(data);
+
+console.log("----");
+
+// Copy
+
+var friends = ["Luis", "Rafael", "Carla"];
+console.log(friends);
+
+var bestFriends = friends.slice(1);
+
+console.log(bestFriends);
+console.log(friends);
+
+// Restar dos unidaddes a todos los items
+
+var edades = [20, 22, 23, 24];
+
+/*for (let i = 0; i < edades.length; i++) {
+    edades[i] = edades[i] - 2;
+}*/
+
+edades = edades.map(function (currentValue, index) {
+    return currentValue - 2;
+})
+console.log(edades);
