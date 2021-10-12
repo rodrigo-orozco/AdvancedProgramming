@@ -82,4 +82,6 @@ var edades = [20, 22, 23, 24];
 edades = edades.map(function (currentValue, index) {
     return currentValue - 2;
 })
+
+/*edades = edades.map(i => i-2);*/
 console.log(edades);
