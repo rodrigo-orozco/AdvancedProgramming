@@ -11,3 +11,6 @@ const BMO = {
 for (key in BMO){
     console.log(`${key}: ${BMO[key]}`);
 };
+
+Object.keys(BMO);
+Object.getOwnPropertyNames(BMO);
