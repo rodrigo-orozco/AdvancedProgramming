@@ -3,6 +3,14 @@ const myObj =  {
     age: 20,
 };
 
-for (let i of bject.values(myObj)){
+for (let i of Object.values(myObj)){
     console.log(i);
 };
+
+
+
+
+
+
+
+
