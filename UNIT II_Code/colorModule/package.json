@@ -1,7 +1,7 @@
 {
   "name": "colormodule",
   "version": "1.0.0",
-  "description": "This is a text of color with fs fileSystem",
+  "description": "This is a test of color with fileSystem",
   "main": "app.js",
   "scripts": {
     "start": "./app.js"

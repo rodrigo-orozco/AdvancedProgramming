@@ -1,30 +1,28 @@
-// I want to create a .txt file
-
+// I want to creae a .txt file
 const fs = require("fs");
 const chalk = require("chalk");
-// import fs from "fs"
 
-const initialMessage = chalk.blue("App running...");
 
-console.log(initialMessage);
+const initialMessage =  chalk.blue("App running...");
 
-//An object
+console.log( initialMessage );
 
+
+//An object:
 const device = {
-    sensorModel: "HC04",
-    count: 0,
-    date: new Date(),  
+        sensorModel: "HC04",
+        count: 0,
+        date: new Date(),
 };
 
-//Crear un archivo en la base de datos local
+//Crear un archivo en la base de datos local!
 fs.writeFileSync("./db/log.json", '');
-console.log(chalk.green("dataInformation was created succesfully!"));
-
-// fs.appendFileSync("./db/log.json", JSON.stringify(device));
+console.log( chalk.green("dataInfomation was created successfully!") );
 
 try{
-    fs.appendFileSync("./db/log.json", JSON.stringify(device));
-    console.log(chalk.green("JSON done!"));
-} catch(error){
-    console.log(chalk.red(chalk.red(`Error: ${error}`))); 
+        fs.appendFileSync("/db/log.json", JSON.stringify(device));
+        console.log(chalk.green("JSON done!"));
+} catch(error) {
+        console.log(chalk.red( chalk.red(`Error: ${error}`)));
 }
+console.log(chalk.yellow("Algoritmos running...."));
